@@ -1,0 +1,33 @@
+﻿<Window x:Class="NextCar2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NextCar2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}" AllowsTransparency="True" WindowStyle="None">
+    <Grid>
+        <Grid Grid.ColumnSpan="3" Margin="0,0,0.8,-0.6">
+            <materialDesign:Card Padding="32" Margin="16,16,16.4,0" Grid.ColumnSpan="2">
+                <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}">Candra Ramadhan Prasetya</TextBlock>
+            </materialDesign:Card>
+            <Button x:Name="button_start" Content="START Engine!" HorizontalAlignment="Left" Height="41" Margin="361,109,0,0" VerticalAlignment="Top" Width="140" Click="button_start_Click" Grid.ColumnSpan="2"/>
+            <Button x:Name="button_accu" Content="OFF" HorizontalAlignment="Left" Height="24" Margin="95,155,0,0" VerticalAlignment="Top" Width="66" Click="button_accu_Click"/>
+            <Label x:Name="label_accu" Content="Accu" HorizontalAlignment="Left" Height="23" Margin="16,133,0,0" VerticalAlignment="Top" Width="68"/>
+            <Button x:Name="button_door" Content="OFF" HorizontalAlignment="Left" Height="24" Margin="95,235,0,0" VerticalAlignment="Top" Width="66" Click="button_door_Click"/>
+            <Label x:Name="label_door" Content="Door" HorizontalAlignment="Left" Height="23" Margin="16,213,0,0" VerticalAlignment="Top" Width="68"/>
+            <Label x:Name="accuState" Content="No Power" HorizontalAlignment="Left" Height="23" Margin="166,167,0,0" VerticalAlignment="Top" Width="68" FontSize="8"/>
+            <Label x:Name="doorState" Content="Door is Locked" HorizontalAlignment="Left" Height="23" Margin="166,247,0,0" VerticalAlignment="Top" Width="68" FontSize="8"/>
+        </Grid>
+    </Grid>
+
+</Window>
